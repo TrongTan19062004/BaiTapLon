@@ -1,0 +1,811 @@
+/*Fonts style*/
+html,body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5em;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    color: #333;
+    text-decoration: none;
+}
+
+p{
+    margin: 10px 0;
+}
+            /*Navigation*/
+header{
+    width: 100%;
+    min-height: 300px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.OU{
+    width:40%;
+    height:100px;
+    background-size: cover;
+    background-position:center;
+}
+.backg1{
+    
+    background-color:black;
+    width:100%;
+    height:120px;
+    
+}
+.backg1 img{
+    margin-top:30px;
+}
+.backg1 nav.xanh div { 
+    color:blue;
+    font-weight: 1000;
+    font-size:50px;
+    text-decoration:underline;
+    margin-top:30px;
+}
+.navbar{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    background:#333;
+}
+.navbar h1{
+    flex: 100%;
+    text-align: left;
+}
+.navbar-link{
+    flex: 100%;
+    text-align: right;
+}
+.navbar-link ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.navbar h1{
+    padding-top: 20px;
+}
+.navbar a{
+    color: #fff;
+}
+.navbar ul li a{
+    display: block;
+    padding: 20px;
+    text-align: center;
+}
+.navbar ul li a:hover{
+    background: #444;
+    color: #f7c083;
+}
+.navbar ul li a::before{
+    content:"" ;
+    height:4px;
+    width:0px;
+    background:#f7c083;
+    position:absolute;
+    bottom:0px;
+    left:0px;
+    transition:0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.navbar-link{
+    flex: 100%;
+    text-align: right;
+}
+.navbar ul li:hover a::before{
+    width:100%;
+}
+nav .fa{
+    display:none;
+}
+/*title mỗi trang */
+@keyframes hien{
+    from{
+        opacity:0;
+        transform:translate(0);
+        
+    }
+    to{
+        opacity:1;
+        transform:translate(25%);
+    }
+}
+div[title]{
+    color:#ff1409;
+    animation:hien 3s ease-in-out;
+    background-image:linear-gradient(to left right,purple,darkblue,black);
+    width:100%;
+    height:80px;
+    transform:translate(25%);
+    padding-top:30px;
+    box-sizing:border-box;
+    font-size:36px;
+    font-weight: 800;
+}
+/*responsive*/
+@media(max-width: 700px){
+    .OU{
+        width:80%;
+    }
+    h1[title]{
+        width:100%;
+        text-align: left;
+        flex-direction:column;
+    }
+    .navbar h1{
+        padding-top: 20px;
+        font-size: 20px;
+        
+    }
+    .navbar-link{
+        position: absolute;
+        background-color: #f7c083;
+        height: 100vh;
+        width: 200px;
+        top:0%;
+        right:-250px;
+        text-align: left;
+        z-index: 2;
+        
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    
+    .col1{
+        flex-direction:column;
+        width:100% !important;
+        display:block;
+    }
+    .column2{
+        flex-direction:column;
+    }
+    .column2 .col1{
+        width:100%;
+    }
+    .column3{
+        flex-direction:column;
+    }
+    .column3 .global{
+        width:100%;
+    }
+    .column3 .content-middle{
+        width:100%;
+    }
+    .column3 .new{
+        width:100%;
+    }
+    .new-content img{
+        height:300px;
+        width:80%;
+    }
+}
+/*Ket qua kiem dinh*/
+.photo img{
+    width:100%;
+}
+ /*showcase*/
+ .showcase{
+    background-image:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("/IMG/trường.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+ }
+ .showcase-content{
+    color: #fff;
+    text-align: center;
+    padding-top: 150px;
+ }
+ .parent > div {
+    right:70%;
+    display:flex;
+    margin-top:25%;
+    
+    }
+    
+    .input {
+    outline: none;
+    border: none;
+    border-radius: 100px;
+    padding: 5px 10px;
+    transition: width 0.3s ease;
+   
+    }
+    
+    .input::placeholder {
+    color: green;
+    }
+    
+    .parent.active .input {
+    width: 200px;
+    }
+    
+    .btn {
+    
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 100px;
+    border: none;
+    background: green;
+    display: inline-block;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.3s ease;
+    
+    }
+    
+    .parent.active .btn {
+    transform: translateX(210px);
+    }
+    
+    .fa-solid {
+    color: #ffffff;
+    }
+ .showcase-content h1{
+    font-size: 60px;
+    line-height: 1.2em;
+ }
+ .showcase-content p{
+    padding-bottom: 16px;
+    line-height: 1.2em;
+ }
+ .button{
+    display: inline-block;
+    font-size: 18px;
+    color: #fff;
+    background-color: #333;
+    padding: 13px 20px;
+    border: none;   
+ }
+ .button:hover{
+    background: #f7c083;
+    color: #444;
+ }
+ 
+
+/* chia hai cột */
+.col1{
+    width:40%;
+    margin-top:100px;
+    color:#f9d1a4;
+    margin-right:10px;
+}
+.iconmenu{
+    width:5%;
+    height:80px;
+    color:#222;
+    background-color:red;
+    position:absolute;
+    font-size: 20px;
+}
+.col2{
+    width:60%;
+}
+.flex{
+    display:flex;
+}
+
+ul.v-menu{
+    flex-direction:column ;
+    width:100%;
+}
+ul.v-menu li{
+    
+    width:auto;
+    height:40px;
+    line-height:40px;
+    border-bottom:1px solid #e8e8e8;
+
+}
+
+ul.v-menu li a{
+    align-items: center;
+    background:linear-gradient(blue,#0099ff);
+    color: white;
+    text-align:center;
+    box-sizing: border-box;
+    display:block;
+    width:auto;
+}
+ul.v-menu li a:hover {
+    background:linear-gradient(orange,red);
+    color:blue !important;
+}
+ /*major*/
+.major{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.major-row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.major-col{
+    flex-basis: 30%;
+    background: #f9d1a4;
+    
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+.major h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+.major-col h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.major-col:hover{
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.25);
+}
+/*responsive*/
+@media(max-width: 700px){
+    .major-row{
+        flex-direction: column;
+    }
+}
+
+/*Global*/
+.global{
+    width: 35%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 50px;
+    float:left;
+}
+.global-row{
+    margin-top: 5%;
+    justify-content: space-between;
+}
+.global-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    position: relative;
+}
+.global p{
+    color: #444;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+}
+.global h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.global-col img{
+    width: 100%;
+    height: 400px;
+    display: block;
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background: rgba(255,187,152,0.8);
+}
+.layer h3 {
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    position:absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer:hover h3{
+    opacity: 1;
+    bottom: 49%;
+    
+}
+
+@media(max-width: 700px){
+    .global-row{
+        flex-direction: column;
+    }
+}
+/*content-middle*/
+.content-middle{
+    width:40%;
+    margin:5%;
+    padding:7px;
+    
+}
+@keyframes doimauh1{
+     from{
+        color:orange;
+     }
+     to{
+        color:red;
+     }
+
+}
+.content-middle h1{
+    font-weight:600 ;
+    font-size:24px;
+    animation: doimauh1 3s ease-in-out infinite;
+}
+.content-middle ul{
+    margin-top: 0;
+    margin-bottom: 8.5px;
+}
+
+.content-middle div hr{
+    color:blue;
+}
+.content-middle ul li{
+    display: list-item;
+}
+.content-middle ul li a{
+    color:blue;
+}
+.content-middle .padding-bottom {
+    padding-bottom: 25px;
+}
+.content-middle .padding-top{
+    padding-top:25px;
+}
+.column{
+    flex-direction:column ;
+}
+/*News*/
+.new{
+    width: 20%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 100px;
+    float:right;
+}
+.new-row{
+    margin-top: 5%;
+    
+}
+.new-content {
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+.new-content img{
+    width: 100%;
+    border-radius: 10px;
+    height: 200px;
+}
+.new h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+.new-content h4{
+    font-size: 16px;
+    font-weight: 600;
+}
+@media(max-width: 700px){
+    .new-row{
+        flex-direction: column;
+    }
+}
+/*Footer*/
+.container-foot{
+    max-width: 1170px; 
+    margin: auto;
+}
+.foot-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.foot-row ul{
+    list-style: none;
+}
+footer{
+    background-color: #444;
+    padding: 70px 0;
+}
+.foot-col{
+    width: 25%;
+    padding: 0 15ps;
+}
+.foot-col h4{
+    font-size: 18px;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+.foot-col a{
+    font-size: 16px;
+    font-weight: 300;
+    color:#bbb;
+    display: block;
+    transition:all 0.3s ease;
+
+}
+.foot-col a:hover{
+    color: #fff;
+    padding-left: 10px;
+}
+/*responsive*/
+@media(max-width: 700px){
+    .foot-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+@media(max-width: 500px){
+    .footer-col{
+        width: 100%;
+    }
+}
+/*go to top*/
+#backtop{
+    width:50px;
+    height:50px;
+    background:orange;
+    color:#f0f0f0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:50%;
+    position:fixed;
+    bottom:40px;
+    right:20px;
+}
+
+                    /* about us*/
+/*showcase*/
+.about-showcase{
+    background-image:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("/IMG/lớp\ học.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 350px;
+}
+.about-showcase{
+    color: #fff;
+    text-align: center;
+    padding-top: 130px;
+ }
+ .about-showcase h1{
+    font-size: 60px;
+    line-height: 1.2em;
+    margin-bottom: 120px;
+ }
+
+ /*content*/
+ .about-us{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+ }
+ .about-us-row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+ }
+ .about-us-col img{
+    width: 100%;
+    margin-left: 20px;
+    
+ }
+ .about-us-col p{
+    padding: 15px 0 25px;
+ }
+ /*responsive*/
+ @media(max-width: 700px){
+    .about-us-row{
+        flex-direction: column;
+    }
+}
+                /*Tuyển sinh*/
+.tuyensinh-showcase{
+    background-image:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("/IMG/tuyen_sinh.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 350px;
+}
+.tuyensinh-showcase{
+    color: #fff;
+    text-align: center;
+    padding-top: 130px;
+ }
+ .tuyensinh-showcase h1{
+    font-size: 60px;
+    line-height: 1.2em;
+    margin-bottom: 120px;
+ }
+ .tuyensinh{
+    width: 80%;
+    margin: auto;
+    padding: 60px 0;
+ }
+ .tuyensinh-row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.tuyensinh-left{
+    flex-basis: 65%;
+}
+.tuyensinh-left img{
+    width: 100%;
+    height: 400px;
+}
+.tuyensinh-left h2{
+    color: #222;
+    font-weight: 600;
+    margin: 30px 0;
+}
+.tuyensinh-left p{
+    color: #888;
+    padding: 0;
+}
+.tuyensinh-right{
+    flex-basis: 32%;  
+}
+@keyframes doimau{
+    0% {background-color:#f7c083;}
+    25% {background-color:orange;}
+    50%{background-color:orangered;}
+    100%{background-color:red;}
+}
+.tuyensinh-right h3{
+    text-align: center;
+    display: block;
+    background-color:#f7c083;
+    color: #fff;
+    padding: 7px 0;
+    font-size: 16px;
+    animation:doimau 3s ease infinite;
+}
+
+.tuyensinh-right div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #555;
+    padding: 8px;
+    box-sizing: border-box;
+    background:linear-gradient(blue,#0099ff);
+    font-weight:600;
+
+}
+.comment{
+    border: 1px solid #ccc;
+    margin: 50px 0;
+    padding: 10px 20px;
+}
+.comment h3{
+    text-align: left;
+}
+.comment-form input, .comment-form textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    background-color: #f0f0f0;
+}
+ /*responsive*/
+ @media(max-width: 700px){
+    .tuyensinh-row{
+        flex-direction: column;
+    }
+}
+
+                    /*Contact*/
+
+.contact-showcase{
+    background-image:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("/IMG/Liên\ Hệ.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 350px;
+}
+.contact-showcase{
+    color: #fff;
+    text-align: center;
+    padding-top: 130px;
+ }
+ .contact-showcase h1{
+    font-size: 60px;
+    line-height: 1.2em;
+    margin-bottom: 120px;
+ }
+ .location{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+ }
+ .location iframe{
+    width: 100%; 
+ }
+ .contact{
+    width: 80%;
+    margin: auto;
+ }
+
+ .contact-row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+ .contact-col{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+ }
+ .contact-col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+ }
+ .contact-col div .fa{
+    font-size: 28px;
+    color: #f7c083;
+    margin: 10px;
+    margin-right: 30px;
+ }
+ .contact-col div h5{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #444;
+    font-weight: 400;
+ }
+ .contact-col input, .contact-col textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline:none;
+    border: 1px solid #ccc;
+ }
+ /*responsive*/
+ @media(max-width: 700px){
+    .contact-row{
+        flex-direction: column;
+    }
+}
+/*Kết quả kiểm định */
+.kiemdinh-showcase{
+    background-image:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("/IMG/ketquakiemdinh.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 350px;
+}
+.kiemdinh-showcase{
+    color: #fff;
+    text-align: center;
+    padding-top: 130px;
+ }
+ .kiemdinh-showcase h1{
+    font-size: 60px;
+    line-height: 1.2em;
+    margin-bottom: 120px;
+ }
