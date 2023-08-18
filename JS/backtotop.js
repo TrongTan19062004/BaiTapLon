@@ -14,6 +14,7 @@
             return false;   
     });
 });*/
+/*
 $(window).scroll(function () {
     if($(this).scrollTop() > 200){
         $('#backtop').css("right","20px");
@@ -31,3 +32,4 @@ $(window).scroll(function(){
         $('h1[title]').animate()
     }
 })
+*/

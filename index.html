@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Khoa công nghệ thông tin trường Đại Học Mở TH.HCM">
     <meta name="keywords" content="cntt, công nghệ thông tin, Đại học Mở, OU">
-    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="../CSS/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Khoa công nghệ thông tin</title>
+    <title>Khoa công nghệ thông tin Trang chủ</title>
 </head>
 <body>
     <header>
         <!--navigation-->
         <div class="backg1">
             <div class="OU ">
-                <img src="/IMG/LOGO.png" alt="OU">
+                <img src="../IMG/LOGO.png" alt="OU">
             </div>
         </div>
             <nav class="navbar">
@@ -41,7 +41,7 @@
         </div>
     </header>
 
-    <main>
+    <main class="backg2">
         <section class="flex column2">
         <!--Chuyên ngành-->
         <section class="col1">
@@ -166,14 +166,16 @@
             </div>
         </section>
     </section>
-        
-    <a href="#"  id="backtop">
-        <i class="fa fa-arrow-up"></i>
-    </a>
+    <div> 
+        <!--go to top-->
+        <a href="#"  id="backtop"onclick="goToTop()">
+            <i class="fa fa-arrow-up" ></i>
+        </a>
+    </div> 
+    <div id="digital-clock"></div>
     </main>
 
     <footer>
-        <!--go to top-->
         
         <div class="container-foot">
             <div class="foot-row">
@@ -217,6 +219,7 @@
     </footer>
     <script src="JS/main.js"></script>
     <script src="JS/backtotop.js"></script>
+    
 </body>
 
 </html>

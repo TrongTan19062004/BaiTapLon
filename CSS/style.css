@@ -95,10 +95,6 @@ header{
     left:0px;
     transition:0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-.navbar-link{
-    flex: 100%;
-    text-align: right;
-}
 .navbar ul li:hover a::before{
     width:100%;
 }
@@ -308,12 +304,12 @@ ul.v-menu li{
     height:40px;
     line-height:40px;
     border-bottom:1px solid #e8e8e8;
-
+    
 }
 
 ul.v-menu li a{
     align-items: center;
-    background:linear-gradient(blue,#0099ff);
+    background:linear-gradient(black,darkblue);
     color: white;
     text-align:center;
     box-sizing: border-box;
@@ -321,9 +317,10 @@ ul.v-menu li a{
     width:auto;
 }
 ul.v-menu li a:hover {
-    background:linear-gradient(orange,red);
-    color:blue !important;
+    color:yellow !important;
+    background:linear-gradient(darkblue,black);
 }
+
  /*major*/
 .major{
     width: 80%;
@@ -565,6 +562,18 @@ footer{
         width: 100%;
     }
 }
+/*style đồng hồ */
+#digital-clock {
+    background-color: #66ffff;
+    width: 100%;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 64px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
 /*go to top*/
 #backtop{
     width:50px;
