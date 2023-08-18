@@ -27,10 +27,14 @@ header{
 }
 
 .OU{
-    width:40%;
+    width:100%;
     height:100px;
     background-size: cover;
     background-position:center;
+}
+.OU img{
+    max-width:80%;
+    height:120px;
 }
 .backg1{
     
@@ -128,7 +132,13 @@ div[title]{
 /*responsive*/
 @media(max-width: 700px){
     .OU{
-        width:80%;
+        width:100%;
+    }
+    .OU img{
+        width:100%;
+    }
+    #backtop{
+        width:100%;
     }
     h1[title]{
         width:100%;
@@ -149,6 +159,7 @@ div[title]{
         right:-250px;
         text-align: left;
         z-index: 2;
+        
         
     }
     nav .fa{
@@ -203,53 +214,7 @@ div[title]{
     text-align: center;
     padding-top: 150px;
  }
- .parent > div {
-    right:70%;
-    display:flex;
-    margin-top:25%;
-    
-    }
-    
-    .input {
-    outline: none;
-    border: none;
-    border-radius: 100px;
-    padding: 5px 10px;
-    transition: width 0.3s ease;
-   
-    }
-    
-    .input::placeholder {
-    color: green;
-    }
-    
-    .parent.active .input {
-    width: 200px;
-    }
-    
-    .btn {
-    
-    padding: 5px 10px;
-    cursor: pointer;
-    border-radius: 100px;
-    border: none;
-    background: green;
-    display: inline-block;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: transform 0.3s ease;
-    
-    }
-    
-    .parent.active .btn {
-    transform: translateX(210px);
-    }
-    
-    .fa-solid {
-    color: #ffffff;
-    }
+
  .showcase-content h1{
     font-size: 60px;
     line-height: 1.2em;
@@ -628,6 +593,11 @@ footer{
  .about-us-col p{
     padding: 15px 0 25px;
  }
+ .subject{
+    background-color:red;
+    font-size:24px;
+
+ }
  /*responsive*/
  @media(max-width: 700px){
     .about-us-row{
@@ -740,7 +710,7 @@ footer{
     height: 350px;
 }
 .contact-showcase{
-    color: #fff;
+    color: purple;
     text-align: center;
     padding-top: 130px;
  }

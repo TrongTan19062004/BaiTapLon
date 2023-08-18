@@ -2,12 +2,14 @@
 var Navlinks=document.getElementById("navLinks");
 
 function showMenu(){
-    Navlinks.style.right="0";
-    Navlinks.style.transition="right ease 2s";
+    Navlinks.style.right="50%";
+    Navlinks.style.left=0;
+    Navlinks.style.transition="all ease 2s";
 }
 function hideMenu(){
-    Navlinks.style.right="-200px";
-    Navlinks.style.transition="right ease 2s";    
+    Navlinks.style.right="unset";
+    Navlinks.style.left="-100%";
+    Navlinks.style.transition="all ease 2s";    
 }
 window.onscroll=function(){
     console.info(document.documentElement.scrollTop);
@@ -104,4 +106,38 @@ $("button.digit").click(function(){
 });*/
 
 
+
+function loadMajor(){
+    fetch("index.json").then(res=> res.json()).then(data => {
+        let h="";
+        for(let p of data)
+        h+= `
+        <div class="major-col">
+            <h3>${p.title}</h3>
+            <p>${p.text}</p>
+        </div>
+    `;
+    let d=document.getElementById("major-row");
+    d.innerHTML+=h;
+    });
+};
+function loadNew(){
+    fetch("new.json").then(res=> res.json()).then(data => {
+        let k="";
+        for(let c of data)
+        k+= `
+        <div class="new-content">
+            <img src=${c.image} alt="">
+            <h4>${c.name}</h4>
+            <p>${c.text}</p>
+        </div>
+    `;
+    let f=document.getElementById("new-row");
+    f.innerHTML+=k;
+    }) ;
+};
+window.onload=function(){
+    loadMajor();
+    loadNew();
+}
 

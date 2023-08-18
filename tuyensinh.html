@@ -12,25 +12,13 @@
 <body>
     <header>
         <!--navigation-->
-        <nav class="navbar" id="myHeader">
-            <div class="left">
-
-                <h1 class="logo item"><a href="index.html">IT-OU</a></h1>
-                <div class="parent flex">
-                    <div>
-                        <input class="input" type="type" placeholder="Tìm kiếm..." />
-                    </div>
-                    <div>
-
-                        <button class="btn">
-                                <i class="fa-solid fa-magnifying-glass"></i>
-                        </button>
-                    </div>
-                </div>
-
-                </div>
-
+        <div class="backg1">
+            <div class="OU">
+                <img src="../IMG/LOGO.png" alt="OU">
             </div>
+        </div>
+            <nav class="navbar">
+                <h1 class="logo"><a href="index.html">IT-OU</a></h1>
                 <div class="navbar-link" id="navLinks">
                     <i class="fa fa-times" onclick="hideMenu()"></i>
                     <ul>
@@ -42,14 +30,20 @@
                 </div>
                 <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
-
+        
         <!--showcase-->
-        <div class="tuyensinh-showcase">
-            <h1>Tuyển sinh</h1>
+        <div class="showcase">
+                <div class="showcase-content">
+                    <h1><span class="text">CNTT</span> Đại học Mở </h1>
+                    <p>Khoa Công Nghệ Thông Tin Trường Đại học Mở TP.HCM</p>
+                    <a class="button" href="about.html">Xem chi tiết</a>
+                </div>
         </div>
     </header>
-    <main class="flex">
-        
+
+    <main class="backg2">
+        <section class="flex column2">
+        <!--Chuyên ngành-->
         <section class="col1">
             
             <div class="tuyensinh-right">
@@ -58,14 +52,36 @@
             <ul class="v-menu flex">
                 <li><a href="about.html">Giới thiệu</a></li>
                 <li><a href="ketquakiemdinh.html">Kết quả kiểm định</a></li>
-                <li><a href="#">Tuyển sinh đại học 2023</a></li>
-                <li><a href="#">Tuyển sinh cao học 2023</a></li>
-                <li><a href="#">Tin tức - Thông Báo</a></li>
-                <li><a href="#">Hợp đồng doanh nghiệp</a></li>
-                <li><a href="#">Quy định - Quy chế</a></li>
-                <li><a href="#">Biểu mẫu</a></li>
+                <li><a href="daihoc.html">Tuyển sinh đại học 2023</a></li>
+                <li><a href="caohoc.html">Tuyển sinh cao học 2023</a></li>
+                <li><a href="index.html">Tin tức - Thông Báo</a></li>
+                <li><a href="hopdong.html">Hợp đồng doanh nghiệp</a></li>
+                <li><a href="quydinh.html">Quy định - Quy chế</a></li>
+                <li><a href="bieumau.html">Biểu mẫu</a></li>
             </ul>
         </section>
+        <section class="major col2">
+            <h1>Ngành học</h1>
+            <p>Các chuyên ngành đào của của khoa Công Nghệ Thông Tin</p>
+            <!--Ngành--> 
+            <div class="major-row" id="major-row">
+                
+                <!---
+                <div class="major-col">
+                    <h3>CS</h3>
+                    <p>Ngành Khoa học máy tính đào tạo các cử nhân có kiến thức cơ bản và chuyên sâu về khoa học máy tính
+                    đáp ứng các yêu cầu về nghiên cứu phát triển và hiện thực các ứng dụng công nghệ thông tin (CNTT)</p>
+                </div>
+                <div class="major-col">
+                    <h3>IT</h3>
+                    <p>Ngành Công nghệ thông tin đào tạo các cử nhân có phẩm chất đạo đức, có kỷ luật và có trách nhiệm trong công việc
+                        có khả năng vận hành, quản lý, phát triển các ứng dụng công nghệ thông tin
+                    </p>
+                </div>
+                -->
+            </div>
+        </section>
+    </section>
         <section class="tuyensinh col2">
             <div class="tuyensinh-row">
                 <div class="tuyensinh-left">
@@ -114,9 +130,13 @@
 
 
         <!--go to top-->
-        
+        <div>
+            <a href="#"  id="backtop"onclick="goToTop()">
+                <i class="fa fa-arrow-up" ></i>
+            </a>
+        </div>
     </main>
-
+    <div id="digital-clock"></div>
     <footer>
         <a href="#" class="to-top">
             <i class="fa fa-arrow-up"></i>
