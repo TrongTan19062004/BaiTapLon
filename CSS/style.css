@@ -2,8 +2,7 @@
 html,body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.5em;
-
-}
+}   
 *{
     margin: 0;
     padding: 0;
@@ -16,6 +15,10 @@ a{
 
 p{
     margin: 10px 0;
+    color:#f0f0f0;
+}
+main{
+    background:linear-gradient(to bottom right,black,darkblue,purple);
 }
             /*Navigation*/
 header{
@@ -28,19 +31,18 @@ header{
 
 .OU{
     width:100%;
-    height:100px;
+    height:180px;
     background-size: cover;
     background-position:center;
 }
-.OU img{
-    max-width:80%;
-    height:120px;
+.logo{
+    color:darkred;
 }
 .backg1{
-    
+
     background-color:black;
     width:100%;
-    height:120px;
+    height:180px;
     
 }
 .backg1 img{
@@ -63,6 +65,7 @@ header{
 .navbar h1{
     flex: 100%;
     text-align: left;
+    color:darkred;
 }
 .navbar-link{
     flex: 100%;
@@ -79,11 +82,13 @@ header{
 }
 .navbar a{
     color: #fff;
+    font-weight:600;
 }
 .navbar ul li a{
     display: block;
     padding: 20px;
     text-align: center;
+    
 }
 .navbar ul li a:hover{
     background: #444;
@@ -105,6 +110,16 @@ header{
 nav .fa{
     display:none;
 }
+
+.sticky{
+    position:fixed;
+    top:0;
+    width:100%;
+}
+.text{
+    color:#f7c083;
+}
+
 /*title mỗi trang */
 @keyframes hien{
     from{
@@ -120,17 +135,21 @@ nav .fa{
 div[title]{
     color:#ff1409;
     animation:hien 3s ease-in-out;
-    background-image:linear-gradient(to left right,purple,darkblue,black);
     width:100%;
-    height:80px;
     transform:translate(25%);
     padding-top:30px;
     box-sizing:border-box;
     font-size:36px;
     font-weight: 800;
+    text-shadow: #f7c083;
+    margin-bottom:50px ;
 }
 /*responsive*/
 @media(max-width: 700px){
+    html,body{
+        padding:0;
+        margin:0;
+    }
     .OU{
         width:100%;
     }
@@ -155,12 +174,11 @@ div[title]{
         background-color: #f7c083;
         height: 100vh;
         width: 200px;
-        top:0%;
-        right:-250px;
+        top:0;
+        right:0;
+        left:-250px;
         text-align: left;
         z-index: 2;
-        
-        
     }
     nav .fa{
         display: block;
@@ -177,6 +195,7 @@ div[title]{
     }
     .column2{
         flex-direction:column;
+        width:100%;
     }
     .column2 .col1{
         width:100%;
@@ -197,6 +216,12 @@ div[title]{
         height:300px;
         width:80%;
     }
+    #digital-clock{
+        flex-direction: column;
+        width:100%;
+        line-height:3rem;
+    }
+    
 }
 /*Ket qua kiem dinh*/
 .photo img{
@@ -262,6 +287,7 @@ div[title]{
 ul.v-menu{
     flex-direction:column ;
     width:100%;
+    
 }
 ul.v-menu li{
     
@@ -269,6 +295,7 @@ ul.v-menu li{
     height:40px;
     line-height:40px;
     border-bottom:1px solid #e8e8e8;
+    
     
 }
 
@@ -281,6 +308,7 @@ ul.v-menu li a{
     display:block;
     width:auto;
 }
+
 ul.v-menu li a:hover {
     color:yellow !important;
     background:linear-gradient(darkblue,black);
@@ -310,7 +338,12 @@ ul.v-menu li a:hover {
 .major h1{
     font-size: 36px;
     font-weight: 600;
+    color:white;
 }
+.major p{
+    color:white;
+}
+
 .major-col h3{
     text-align: center;
     font-weight: 600;
@@ -323,7 +356,9 @@ ul.v-menu li a:hover {
 @media(max-width: 700px){
     .major-row{
         flex-direction: column;
+        
     }
+    
 }
 
 /*Global*/
@@ -334,6 +369,7 @@ ul.v-menu li a:hover {
     padding-top: 50px;
     float:left;
 }
+
 .global-row{
     margin-top: 5%;
     justify-content: space-between;
@@ -346,7 +382,7 @@ ul.v-menu li a:hover {
     position: relative;
 }
 .global p{
-    color: #444;
+    color: white;
     font-size: 16px;
     font-weight: 300;
     line-height: 22px;
@@ -354,6 +390,7 @@ ul.v-menu li a:hover {
 .global h1{
     font-size: 36px;
     font-weight: 600;
+    color:#e8e8e8;
 }
 
 .global-col img{
@@ -369,6 +406,7 @@ ul.v-menu li a:hover {
     top: 0;
     left: 0;
     transition: 0.5s;
+    text-align:center;
 }
 .layer:hover{
     background: rgba(255,187,152,0.8);
@@ -430,7 +468,7 @@ ul.v-menu li a:hover {
     display: list-item;
 }
 .content-middle ul li a{
-    color:blue;
+    color:white;
 }
 .content-middle .padding-bottom {
     padding-bottom: 25px;
@@ -440,6 +478,7 @@ ul.v-menu li a:hover {
 }
 .column{
     flex-direction:column ;
+    
 }
 /*News*/
 .new{
@@ -467,15 +506,54 @@ ul.v-menu li a:hover {
 .new h1{
     font-size: 36px;
     font-weight: 600;
+    color:white;
+}
+.new p{
+    color:white;
 }
 .new-content h4{
-    font-size: 16px;
+    font-size: 36px;
     font-weight: 600;
+    color:white;
 }
+.lienket{
+    background:darkmagenta;
+    color:white;
+    font-weight:800;
+    padding-top:20px;
+    font-size: 36px;
+    justify-content: center;
+   height:80px;
+}
+
+.slider{
+    margin:30px auto;
+    width:70%;
+}
+.img-box img{
+    width:100%;
+    height:150px;
+}
+.img-box{
+    width:100%;
+    
+}
+.slider-content-item{
+    padding:10px;
+}
+
 @media(max-width: 700px){
     .new-row{
         flex-direction: column;
+    
+    }.slider{
+        width:100%;
     }
+    .img-box img{
+        width:50%;
+        margin-top:-20px;
+    }
+    
 }
 /*Footer*/
 .container-foot{
@@ -528,8 +606,8 @@ footer{
     }
 }
 /*style đồng hồ */
-#digital-clock {
-    background-color: #66ffff;
+#digital-clock{
+    background-image:linear-gradient(to bottom right,darkblue,black,gold);
     width: 100%;
     margin: auto;
     padding-top: 50px;
@@ -537,21 +615,22 @@ footer{
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 64px;
     text-align: center;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color:#e8e8e8;
   }
 /*go to top*/
 #backtop{
     width:50px;
     height:50px;
     background:orange;
-    color:#f0f0f0;
+    color:black;
     display:flex;
     justify-content: center;
     align-items: center;
     border-radius:50%;
     position:fixed;
     bottom:40px;
-    right:20px;
+    right:40px;
+    cursor:pointer;
 }
 
                     /* about us*/
@@ -598,6 +677,34 @@ footer{
     font-size:24px;
 
  }
+ .yellow{
+    color:yellow;
+ }
+ 
+ .imgs{
+    width:80%;
+    margin:10px auto;
+ }
+ .img-content{
+    width:100%;
+    padding-bottom:20px;
+    height:300px;
+    
+ }
+
+ .btn{
+    border:none;
+    outline:none;
+    background:gray;
+    padding:2px 6px;
+    font-size:20px;
+    color:#ddd;
+    margin:3px auto;
+    cursor:pointer;
+ }
+ .btn:hover{
+    background:orange;
+ }
  /*responsive*/
  @media(max-width: 700px){
     .about-us-row{
@@ -639,16 +746,17 @@ footer{
     height: 400px;
 }
 .tuyensinh-left h2{
-    color: #222;
+    color:white;
     font-weight: 600;
     margin: 30px 0;
 }
 .tuyensinh-left p{
-    color: #888;
+    color: white;
     padding: 0;
 }
 .tuyensinh-right{
-    flex-basis: 32%;  
+    flex-basis: 32%;
+    
 }
 @keyframes doimau{
     0% {background-color:#f7c083;}
@@ -670,7 +778,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: #555;
+    color: white;
     padding: 8px;
     box-sizing: border-box;
     background:linear-gradient(blue,#0099ff);
@@ -681,6 +789,7 @@ footer{
     border: 1px solid #ccc;
     margin: 50px 0;
     padding: 10px 20px;
+    background-color:#66ffff;
 }
 .comment h3{
     text-align: left;
@@ -690,10 +799,22 @@ footer{
     padding: 10px;
     margin: 15px 0;
     box-sizing: border-box;
-    border: none;
     outline: none;
     background-color: #f0f0f0;
 }
+.comment-form label{
+    color: darkslategray;
+}
+.loi{ 
+    border:2px solid red;
+    background-color:yellow;
+    padding:6px;
+}
+#baoloi { 
+    background: darksalmon; 
+    color:ghostwhite;
+    text-align: center; 
+  }
  /*responsive*/
  @media(max-width: 700px){
     .tuyensinh-row{
@@ -731,7 +852,6 @@ footer{
     width: 80%;
     margin: auto;
  }
-
  .contact-row{
     margin-top: 5%;
     display: flex;
@@ -755,7 +875,7 @@ footer{
  .contact-col div h5{
     font-size: 20px;
     margin-bottom: 5px;
-    color: #444;
+    color: white;
     font-weight: 400;
  }
  .contact-col input, .contact-col textarea{
@@ -788,3 +908,44 @@ footer{
     line-height: 1.2em;
     margin-bottom: 120px;
  }
+
+.items{
+    width:80%;
+    max-height:1500px;
+    position:relative;
+    text-align:center;
+}
+.item{
+    height:300px;
+    width:100%;
+    
+}
+.items div div{
+    color:yellow;
+    font-size:20px;
+    text-align:center;
+}
+ol.list{
+    color:yellow;
+}
+ol.list > li ol.sublist > li{
+    color:yellow;
+}
+ol.list > li ol.sublist > li > ul > p {
+    color:white;
+}
+ol.list > li ol.sublist > li > ul > li{
+    color:white;
+}
+.thongtin{
+    color:white;
+    background-color:black;
+    
+    font-size:1.2em;
+    height:80px;
+    
+    position:relative;
+    
+    bottom:60px;
+}
+

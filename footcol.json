@@ -1,0 +1,30 @@
+[
+    {
+        "id":1,
+        "lop":"Cơ sở",
+        "title1":"Gò Vấp, Tp.HCM",
+        "title2":"Quận 1, Tp.HCM",
+        "title3":"Thủ Dầu 1, Bình Dương"
+    },
+    {
+        "id":1,
+        "lop":"Chương trình đào tạo",
+        "title1":"Chương trình đại học",
+        "title2":"Chương trình thạc sỹ",
+        "title3":"Chương trình học từ xa"
+    },
+    {
+        "id":1,
+        "lop":"Hệ thống",
+        "title1":"Hệ thống quản lý Đào Tạo",
+        "title2":"Hợp tác doanh nghiệp",
+        "title3":"Các biểu mẫu cho sinh viên"
+    },
+    {
+        "id":1,
+        "lop":"IT-OU",
+        "title1":"(+84) 3838.6603",
+        "title2":"Email: fcs@ou.edu.vn",
+        "title3":"Trụ sở chính: 97 Võ Văn Tần P6 Q3 Tp.HCM"
+    }
+]

@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Khoa công nghệ thông tin trường Đại Học Mở TH.HCM">
     <meta name="keywords" content="cntt, công nghệ thông tin, Đại học Mở, OU">
-    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="../CSS/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Khoa công nghệ thông tin</title>
+    <link rel="icon" href="../IMG/logoou.jpg">
+    <title>Tuyển sinh</title>
 </head>
 <body>
     <header>
@@ -17,15 +18,12 @@
                 <img src="../IMG/LOGO.png" alt="OU">
             </div>
         </div>
-            <nav class="navbar">
+            <nav class="navbar" id="myhead">
                 <h1 class="logo"><a href="index.html">IT-OU</a></h1>
                 <div class="navbar-link" id="navLinks">
                     <i class="fa fa-times" onclick="hideMenu()"></i>
-                    <ul>
-                        <li><a href="index.html">Trang Chủ</a></li>
-                        <li><a href="about.html">Giới Thiệu</a></li>
-                        <li><a href="tuyensinh.html">Tuyển Sinh</a></li>
-                        <li><a href="contact.html">Liên Hệ</a></li>
+                    <ul id="menu">
+                        
                     </ul>
                 </div>
                 <i class="fa fa-bars" onclick="showMenu()"></i>
@@ -66,19 +64,6 @@
             <!--Ngành--> 
             <div class="major-row" id="major-row">
                 
-                <!---
-                <div class="major-col">
-                    <h3>CS</h3>
-                    <p>Ngành Khoa học máy tính đào tạo các cử nhân có kiến thức cơ bản và chuyên sâu về khoa học máy tính
-                    đáp ứng các yêu cầu về nghiên cứu phát triển và hiện thực các ứng dụng công nghệ thông tin (CNTT)</p>
-                </div>
-                <div class="major-col">
-                    <h3>IT</h3>
-                    <p>Ngành Công nghệ thông tin đào tạo các cử nhân có phẩm chất đạo đức, có kỷ luật và có trách nhiệm trong công việc
-                        có khả năng vận hành, quản lý, phát triển các ứng dụng công nghệ thông tin
-                    </p>
-                </div>
-                -->
             </div>
         </section>
     </section>
@@ -95,13 +80,15 @@
                     <p> Có đủ sức khoẻ để học tập theo quy định hiện hành. Đối với người khuyết tật được cấp có thẩm quyền công nhận bị dị dạng, dị tật, suy giảm khả năng tự lực trong sinh hoạt và học tập thì Hiệu trưởng xem xét,
                          quyết định cho dự tuyển vào các ngành học phù hợp với tình trạng sức khoẻ.</p>
                          <br>
-                    <div class="comment">
+                    <div class="comment" >
                         <h3>Ý kiến</h3>
-                        <form class="comment-form">
-                            <input type="text" placeholder="Họ tên">
-                            <input type="email" placeholder="Email">
-                            <textarea rows="5" placeholder="Nội dung"></textarea>
+                        <form class="comment-form" name="frm1" method="form" onsubmit="return KiemTra()">
+                            <input type="text" placeholder="Họ tên" name="Hoten" id="Hoten">
+                            <input type="text" placeholder="Email" name="email" id="email">
+                            <textarea  rows="5" placeholder="Nội dung" name="NoiDung" id="NoiDung"></textarea>
+
                             <button type="submit" class="button">Gửi</button>
+                            <h4 id="baoloi"></h4>
                         </form>
 
                     </div>
@@ -129,59 +116,22 @@
         </section>
 
 
-        <!--go to top-->
-        <div>
-            <a href="#"  id="backtop"onclick="goToTop()">
-                <i class="fa fa-arrow-up" ></i>
-            </a>
-        </div>
+        
     </main>
     <div id="digital-clock"></div>
     <footer>
-        <a href="#" class="to-top">
-            <i class="fa fa-arrow-up"></i>
-        </a>
+        <!--go to top-->
+        <div id="backtop" onclick="goToTop()">
+            <i class="fa fa-arrow-up" ></i>
+    </div>
         <div class="container-foot">
-            <div class="foot-row">
-                <div class="foot-col">
-                    <h4>Cơ sở</h4>
-                    <ul>
-                        <li><a href="#">Gò Vấp, Tp.HCM</a></li>
-                        <li><a href="#">Quận 1, Tp.HCM</a></li>
-                        <li><a href="#">Thủ Dầu 1, Bình Dương</a></li>
-                    </ul>
-                </div>
-                <div class="foot-col">
-                    <h4>Chương trình đào tạo</h4>
-                    <ul>
-                        <li><a href="#">Chương trình đại học</a></li>
-                        <li><a href="#">Chương trình thạc sỹ</a></li>
-                        <li><a href="#">Chương trình học từ xa</a></li>
-                    </ul>
-                </div>
-                <div class="foot-col">
-                    <h4>Hệ thống</h4>
-                    <ul>
-                        <li><a href="">Hệ thống quản lý Đào Tạo</a></li>
-                        <li><a href="">Hợp tác doanh nghiệp</a></li>
-                        <li><a href="">Các biểu mẫu cho sinh viên</a></li>
-    
-    
-                    </ul>
-                </div>
-                <div class="foot-col">
-                    <h4>IT-OU</h4>
-                    <ul>
-                        <li><a href="#">(+84) 3838.6603</a></li>
-                        <li><a href="#">Email: fcs@ou.edu.vn</a></li>
-                        <li><a href="#">Trụ sở chính: 97 Võ Văn Tần P6 Q3 Tp.HCM</a></li>
-                    </ul>
-                </div>
-    
+            <div class="foot-row" id="foot-row">
+                
             </div>
         </div>
     </footer>
     <script src="JS/main.js"></script>
+    <script src="JS/vMenu.js"></script>
 </body>
 
 </html>

@@ -1,20 +1,27 @@
-    [
+[
         {
             "id":1,
-            "title":"IM",
-            "text":"Ngành Hệ thống thông tin quản lý đào tạo cử nhân có phẩm chất đạo đức, được trang bị đầy đủ khối kiến thức giáo dục đại cương, các vấn đề lý thuyết và các kỹ năng thực hành cơ bản của ngành Công nghệ Thông tin, các kiến thức về kinh tế và quản trị"
+            "link":"index.html",
+            "title":"trang chủ"
         },
         {
             "id":2,
-            "title":"CS",
-            "text":"Ngành Khoa học máy tính đào tạo các cử nhân có kiến thức cơ bản và chuyên sâu về khoa học máy tính đáp ứng các yêu cầu về nghiên cứu phát triển và hiện thực các ứng dụng công nghệ thông tin (CNTT)"
+            "link":"about.html",
+            "title":"Giới thiệu"
         },
         {
             "id":3,
-            "title":"IT",
-            "text":"Ngành Công nghệ thông tin đào tạo các cử nhân có phẩm chất đạo đức, có kỷ luật và có trách nhiệm trong công việc có khả năng vận hành, quản lý, phát triển các ứng dụng công nghệ thông tin"
+            "link":"tuyensinh.html",
+            "title":"Tuyển sinh"
+        },
+        {
+            "id":4,
+            "link":"contact.html",
+            "title":"Liên hệ"
         }
-    ]
-    
+]
+
+
+  
     
 

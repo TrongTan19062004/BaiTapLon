@@ -1,0 +1,23 @@
+[
+    {
+        
+        "image":"../IMG/Thành tích.jpg",
+        
+        "name":"Thành Tích"
+    },
+    {
+        
+        "image":"../IMG/kiểm định.jpg",
+        
+        "name":"Kiểm Định"
+        
+    },
+    {
+        
+        "image":"../IMG/Nghiên cứu.jpg",
+        
+        "name":"Nghiên Cứu"
+        
+    }
+
+]
